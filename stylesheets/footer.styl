@@ -1,0 +1,163 @@
+footer#footer
+  display block
+  height 40px
+  background #000
+  position absolute
+  z-index 6
+  bottom 0px
+  left 0px
+  width 100%
+
+.social
+  li
+    list-style none
+    display inline-block
+    margin 0 0 0 5px
+    text-transform lowercase
+  a
+    color #000
+  .icon
+    background #e8e8ca
+    width 20px
+    height 20px
+    font-size 16px
+    border-radius 3px
+    display table-cell
+    vertical-align middle
+    border 1px solid transparent
+
+    &:before
+      display inline-block
+      text-align center
+      width 100%
+      vertical-align middle
+      text-transform lowercase
+
+    &:after
+      content ' '
+      height 100%
+      display inline-block
+      position absolute
+      width 1px
+
+    &:hover
+      background #000
+      color #e8e8ca
+      border-color #e8e8ca
+      
+    span
+      display none
+
+
+#socials
+  position absolute
+  display inline-block
+
+  margin 9px 0 0 15px
+
+#about
+  display block
+  text-align right
+  font-size 9px
+
+  ul
+    right 0px
+    position absolute
+    list-style none
+    margin 0 0 0 0
+    padding 15px 0 0 0
+    li
+      text-transform uppercase
+      list-style none
+      margin 0 0 0 0
+      padding 0 0 0 0
+      display inline-block
+      margin-right 20px
+
+      a
+        color: #e8e8ca
+        text-decoration none
+        &:hover
+          text-decoration underline
+      
+      &.sound, &.latency
+        position relative
+
+      &.latency
+        width 46px
+        text-transform lowercase
+        cursor pointer
+        span
+          display block
+        .auto 
+          white-space nowrap
+        .details
+          display none
+        .number
+          cursor pointer
+
+        &:hover
+          .number
+            text-decoration underline
+
+          .notification-flag
+            width 400px
+            display block
+            text-decoration none
+            .auto
+              display none
+            .details
+              display block
+              line-height 1.3em
+
+
+        &.inactive
+          display none
+
+        .notification-flag
+          span
+            padding-bottom 16px
+
+
+  .sound-switch
+    .on, .off
+      display none
+    &.on .on,
+    &.off .off
+      display inline
+
+  .sound
+    .notification-flag
+      height 46px
+      white-space nowrap
+
+
+  .notification-flag
+    display none
+    position absolute
+    bottom 40px
+    right 10px
+    padding 18px 15px 0
+    background #000
+    box-sizing border-box
+    color $color-beige
+    font-size 9px
+    text-align left
+    text-transform uppercase
+
+    &:before
+      content ' '
+      width 0px
+      height 0px
+      border-style solid
+      border-width 0 15px 15px 0
+      border-color transparent #000 transparent transparent
+      display block
+      position absolute
+      right 15px 
+      bottom -15px
+
+
+body.loading
+  footer#footer
+    display none

@@ -1,0 +1,137 @@
+@media (orientation: portrait)
+  html.mobile
+    header
+      h1
+        top 6%
+        img
+          width 85%
+      .nav
+        bottom 67px
+
+    .swipe-instruction
+      display none
+    .touch
+      .keyboard
+        display none
+
+      .swipe-instruction
+        display block
+        transition opacity .5s
+        transition-delay .4s
+        &.hide
+          opacity 0
+
+    #gamepad
+      display none!important
+    #canv-css
+      top -255px
+
+    body.game-over
+      #footer
+        display inline-block
+        background-color transparent
+
+
+@media (orientation: landscape)
+  html.mobile
+    .touch
+      .keyboard
+        display none
+      #gamepad.state.active
+        display block!important
+
+    .game-over
+      h3, #single-levels
+        display inline-block
+      h3
+        padding 7px 0 17px 25px
+        vertical-align middle
+      .content
+        padding-bottom 30px
+      .social
+        bottom 10px
+    #canv-css
+      top -290px
+
+    #scores
+      width 100%
+
+      .singleplayer, .multiplayer
+        .player, .opponent
+          display block
+          clearfix()
+      p
+        margin-bottom 0
+      p, ol
+        float left
+
+    .dialog
+      bottom 0
+
+    header .links
+      .experiment, .from
+        bottom 50px
+
+      #canv-css
+        top -266px
+
+    header
+      .nav
+        bottom 51px
+
+    body.main-menu, body.game-over
+      #footer
+        display inline-block
+        background-color transparent
+
+    .swipe-instruction
+      display none
+
+
+@media all and (max-height: 400px) and (orientation: landscape)
+  html.mobile
+    header
+      .nav
+        bottom 10px
+
+@media all and (min-height: 400px ) and (orientation: landscape)
+  html.mobile
+    header
+      .nav
+        bottom 49px
+
+@media all and (min-width: 0px) and (min-height: 0px) and (max-width: 800px)
+
+  html.mobile
+    .state.game-prompt
+      .background
+        height 140px
+        margin-top -70px
+
+      h1, h2, h3, h4
+        font-size 30px
+
+      h4.over
+        font-size 25px
+
+      div.subtitle
+        font-size 15px
+        line-height 30px
+
+@media all and (min-width: 801px) and (max-width: 4800px)
+
+  html.mobile
+    .state.game-prompt
+      .background
+        height 200px
+        margin-top -100px
+
+      h1, h2, h3, h4
+        font-size 40px
+
+      div.subtitle
+        font-size 25px
+        line-height 43px
+
+
+

@@ -1,0 +1,152 @@
+#settingsGUIContainer {
+  display block
+  absolute left 100px top 0
+  z-index 60000000
+}
+
+#settingsDataGUI {
+    position:absolute;
+}
+
+#settingsLevelsGUI {
+  left:400px;
+  position:absolute;
+}
+
+.disabled {
+  opacity:0.5;
+}
+
+#statsDebug {
+  height:auto;
+  width:auto;
+  float:right;
+}
+
+.ui_video {
+  height:121px !important;
+  float:left;
+}
+
+.closed .ui_video {
+  height: 0px !important;
+}
+
+.videoLabel {
+  width:300px;
+  text-align: center;
+  font-family: verdana;
+  font-size:11px;
+  color: #999999;
+  margin: 0px 0 5px 0;
+  clear:both;
+}
+
+.renderer-2d ul {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+#colorSelectContainer {
+  z-index:1000;
+  display:none;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-240px;
+  margin-left:-320px;
+  width: 640px;
+    height:480px;
+}
+
+#colorSelectArea {
+  position:absolute;
+  width:100px;
+  height:100px;
+  left: 450px;
+  top:80px;
+  border: 10px solid red;
+  z-index:30;
+}
+
+#colorSelectCenter {
+  position:absolute;
+  display: block;
+  left:50%;
+  top:50%;
+  margin-left:-5px;
+  margin-top:-5px;
+  width:10px;
+  height:10px;
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  z-index:31;
+}
+
+#marker {
+  position:absolute;
+  width:20px;
+  height:20px;
+  top:350px;
+  background-color: #ff0000;
+  border-radius: 10px 10px 10px 10px;
+  z-index:390;
+}
+
+#videoInput {
+  display: none;
+  left:5px;
+  margin-top: 15px;
+  width: 640px;
+  height:480px;
+  border-radius: 8px;
+  -webkit-transform: scale(-1,1);
+}
+
+#uiTopContent {
+  position:relative;
+}
+
+#monitorFinalBlobs {
+  position:absolute;
+  z-index:3;
+}
+
+// #game #remoteInput,
+// #game #localInput {
+//   display: block;
+//   position: fixed;
+//   bottom: 40px;
+//   left: 0;
+//   background: red;
+//   width: 160px;
+//   height: 120px;
+// }
+// #game #remoteInput {
+//   left: auto;
+//   right: 0;
+//   background: green;
+// }
+
+#debug-info
+  display none // is shown when dev or ?dev
+  position absolute
+  z-index 100000
+  right 0
+  top 20px
+  width 150px
+  max-height 90%
+  background rgba(255,255,255,0.5)
+  padding 10px
+  list-style none
+  overflow scroll
+  letter-spacing 0
+
+  pre
+    tab-size 2
+    font-size 10px
+    font-family Lucida Console, Monaco, monospace
+
+  &:hover
+    margin-right 0

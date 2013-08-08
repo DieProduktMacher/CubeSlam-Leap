@@ -1,0 +1,337 @@
+/*
+ * icons
+ */
+
+@font-face
+  font-family 'icomoon'
+  src url('/fonts/icomoon.eot')
+  src url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.woff') format('woff'),
+    url('/fonts/icomoon.ttf') format('truetype'),
+    url('/fonts/icomoon.svg#icomoon') format('svg')
+  font-weight normal
+  font-style normal
+
+// Hack for chrome windows
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  @font-face
+    font-family 'icomoon'
+    src url('/fonts/icomoon.svg#icomoon') format('svg')
+
+
+$color-beige = #f9f9db
+$color-green = #40a040
+$color-dark-green = #2aa52a
+$color-red = #e83129
+$color-blue = #4184c6
+$color-yellow = #ffd059
+$color-loading-blue = #4372aa
+
+
+//Themes based on levels
+$theme-green-normal = #e72b23
+$theme-green-alternate = #349367
+// -----
+$theme-purple-normal = #ba4b47
+$theme-purple-alternate = #3a8361
+// -----
+$theme-pastell-normal = #bb223f
+$theme-pastell-alternate = #3a836d
+// -----
+$theme-pastellgreen-normal = #ae3140
+$theme-pastellgreen-alternate = #2c825f
+// -----
+$theme-pink-normal = #af304e
+$theme-pink-alternate = #449372
+// -----
+$theme-light-normal = #c94077
+$theme-light-alternate = #338f61
+// -----
+$theme-orange-normal = #f62e3a
+$theme-orange-alternate = #34d177
+// -----
+$theme-forrest-normal = #cd1f1f
+$theme-forrest-alternate = #1d6736
+// -----
+$theme-blackhorizon-normal = #cd1f1f
+$theme-blackhorizon-alternate = #1d675f
+// -----
+$theme-redhorizon-normal = #a91d1d
+$theme-redhorizon-alternate = #217745
+
+
+.bitmap
+  font-family 'icomoon'
+  speak none
+  font-weight normal
+  line-height 1.2em
+  font-smoothing antialiased
+  text-transform uppercase
+  color $color-beige
+  letter-spacing .1em
+  &.shadow
+    color #ffd05a
+    text-shadow 0 .06em 0 #876b2a
+
+.icon[data-icon]:before
+  font-family 'icomoon'
+  content attr(data-icon)
+  speak none
+  font-weight normal
+  line-height 1
+  font-smoothing antialiased
+
+.icon.timebomb:before
+  content "\23"
+
+.icon.extralife:before
+  content "\24"
+
+.icon.bulletproof:before
+  content "\25"
+
+.icon.random:before
+  content "\26"
+
+.icon.paddleresize:before
+  content "\27"
+
+.icon.obsticles:before
+  content "\28"
+
+.icon.multiball:before
+  content "\29"
+
+.icon.mirrored:before
+  content "\2b"
+
+.icon.laser:before
+  content "\2c"
+
+.icon.ghostball:before
+  content "\2d"
+
+.icon.fog:before
+  content "\2e"
+
+.icon.fireball:before
+  content "\2f"
+
+.icon.deathball:before
+  content "\3b"
+
+.icon.mirroredcontrols:before
+  content '+'
+
+
+
+html:not(.mobile)
+  .ui-darken
+    color #444444 !important
+    border-color #444444 !important
+  .ui-darken:before
+    color #444444 !important
+    border-color #444444 !important
+
+$color-beige = #f9f9db
+$color-green = #40a040
+$color-dark-green = #2aa52a
+$color-red = #e83129
+$color-blue = #4184c6
+$color-yellow = #ffd059
+
+.icon[data-icon='⎚']
+  font-size 90px
+
+
+/*
+ * Puck background positions
+ */
+.mobile
+  .puck  {overflow: hidden;background-repeat: no-repeat; width:52px; height:52px; background-image:url('/images/mobile/puck.png');}
+
+  #p1 {width:179px; height:53px;}
+  #p1 .gfx {width:179px; height:53px; background-image:url('/images/mobile/paddle-p1.png');}
+  .p1-0001 .gfx {background-position: -1088px -167px}
+  .p1-0002 .gfx {background-position: -1269px -112px}
+  .p1-0003 .gfx {background-position: -1088px -112px}
+  .p1-0004 .gfx {background-position: -1269px -57px}
+  .p1-0005 .gfx {background-position: -1088px -57px}
+  .p1-0006 .gfx {background-position: -1269px -2px}
+  .p1-0007 .gfx {background-position: -1088px -2px}
+  .p1-0008 .gfx {background-position: -907px -167px}
+  .p1-0009 .gfx {background-position: -907px -112px}
+  .p1-0010 .gfx {background-position: -907px -57px}
+  .p1-0011 .gfx {background-position: -907px -2px}
+  .p1-0012 .gfx {background-position: -726px -167px}
+  .p1-0013 .gfx {background-position: -726px -112px}
+  .p1-0014 .gfx {background-position: -726px -57px}
+  .p1-0015 .gfx {background-position: -726px -2px}
+  .p1-0016 .gfx {background-position: -545px -167px}
+  .p1-0017 .gfx {background-position: -545px -112px}
+  .p1-0018 .gfx {background-position: -545px -57px}
+  .p1-0019 .gfx {background-position: -545px -2px}
+  .p1-0020 .gfx {background-position: -364px -167px}
+  .p1-0021 .gfx {background-position: -364px -112px}
+  .p1-0022 .gfx {background-position: -364px -57px}
+  .p1-0023 .gfx {background-position: -364px -2px}
+  .p1-0024 .gfx {background-position: -183px -167px}
+  .p1-0025 .gfx {background-position: -183px -112px}
+  .p1-0026 .gfx {background-position: -183px -57px}
+  .p1-0027 .gfx {background-position: -183px -2px}
+  .p1-0028 .gfx {background-position: -2px -167px}
+  .p1-0029 .gfx {background-position: -2px -112px}
+  .p1-0030 .gfx {background-position: -2px -57px}
+  .p1-0031 .gfx {background-position: -2px -2px}
+
+
+  #p2 {width:179px; height:47px;}
+  #p2 .gfx {width:179px; height:47px; background-image:url('/images/mobile/paddle-p2.png');}
+  .p2-0001 .gfx {background-position: -318px -389px}
+  .p2-0002 .gfx {background-position: -160px -389px}
+  .p2-0003 .gfx {background-position: -318px -346px}
+  .p2-0004 .gfx {background-position: -160px -346px}
+  .p2-0005 .gfx {background-position: -318px -303px}
+  .p2-0006 .gfx {background-position: -160px -303px}
+  .p2-0007 .gfx {background-position: -318px -260px}
+  .p2-0008 .gfx {background-position: -160px -260px}
+  .p2-0009 .gfx {background-position: -2px -432px}
+  .p2-0010 .gfx {background-position: -2px -389px}
+  .p2-0011 .gfx {background-position: -2px -346px}
+  .p2-0012 .gfx {background-position: -2px -303px}
+  .p2-0013 .gfx {background-position: -2px -260px}
+  .p2-0014 .gfx {background-position: -318px -217px}
+  .p2-0015 .gfx {background-position: -160px -217px}
+  .p2-0016 .gfx {background-position: -2px -217px}
+  .p2-0017 .gfx {background-position: -318px -174px}
+  .p2-0018 .gfx {background-position: -160px -174px}
+  .p2-0019 .gfx {background-position: -2px -174px}
+  .p2-0020 .gfx {background-position: -318px -131px}
+  .p2-0021 .gfx {background-position: -160px -131px}
+  .p2-0022 .gfx {background-position: -2px -131px}
+  .p2-0023 .gfx {background-position: -318px -88px}
+  .p2-0024 .gfx {background-position: -160px -88px}
+  .p2-0025 .gfx {background-position: -2px -88px}
+  .p2-0026 .gfx {background-position: -318px -45px}
+  .p2-0027 .gfx {background-position: -160px -45px}
+  .p2-0028 .gfx {background-position: -2px -45px}
+  .p2-0029 .gfx {background-position: -318px -2px}
+  .p2-0030 .gfx {background-position: -160px -2px}
+  .p2-0031 .gfx {background-position: -2px -2px}
+
+
+  .shields .shield {display:block; background-repeat: no-repeat;background-image:url('/images/mobile/shields.png');}
+
+  .shields-a .s1-01 {width:552px; height:75px; background-position: -2px -2px}
+  .shields-a .s2-01 {width:275px; height:75px; background-position: -556px -2px}
+  .shields-a .s2-02 {width:275px; height:75px; background-position: -2px -79px}
+  .shields-a .s3-01 {width:185px; height:75px; background-position: -833px -2px}
+  .shields-a .s3-02 {width:179px; height:75px; background-position: -466px -79px}
+  .shields-a .s3-03 {width:185px; height:75px; background-position: -279px -79px}
+  .shields-a .s6-01 {width:95px; height:75px; background-position: -647px -79px}
+  .shields-a .s6-02 {width:91px; height:75px; background-position: -838px -79px}
+  .shields-a .s6-03 {width:90px; height:75px; background-position: -1023px -79px}
+  .shields-a .s6-04 {width:90px; height:75px; background-position: -931px -79px}
+  .shields-a .s6-05 {width:92px; height:75px; background-position: -744px -79px}
+  .shields-a .s6-06 {width:96px; height:75px; background-position: -1020px -2px}
+  .shields-a .s9-01 {width:64px; height:75px; background-position: -549px -156px}
+  .shields-a .s9-02 {width:63px; height:75px; background-position: -615px -156px}
+  .shields-a .s9-03 {width:61px; height:75px; background-position: -744px -156px}
+  .shields-a .s9-04 {width:60px; height:75px; background-position: -993px -156px}
+  .shields-a .s9-05 {width:60px; height:75px; background-position: -931px -156px}
+  .shields-a .s9-06 {width:60px; height:75px; background-position: -869px -156px}
+  .shields-a .s9-07 {width:60px; height:75px; background-position: -807px -156px}
+  .shields-a .s9-08 {width:62px; height:75px; background-position: -680px -156px}
+  .shields-a .s9-09 {width:65px; height:75px; background-position: -482px -156px}
+
+  .shields-b .s1-01 {width:260px; height:37px; background-position: -2px -156px}
+  .shields-b .s2-01 {width:130px; height:37px; background-position: -2px -195px}
+  .shields-b .s2-02 {width:129px; height:37px; background-position: -264px -156px}
+  .shields-b .s3-01 {width:85px; height:36px; background-position: -395px -156px}
+  .shields-b .s3-02 {width:84px; height:36px; background-position: -222px -195px}
+  .shields-b .s3-03 {width:86px; height:36px; background-position: -134px -195px}
+  .shields-b .s6-01 {width:45px; height:37px; background-position: -308px -195px}
+  .shields-b .s6-02 {width:43px; height:37px; background-position: -1115px -80px}
+  .shields-b .s6-03 {width:43px; height:37px; background-position: -1055px -195px}
+  .shields-b .s6-04 {width:43px; height:37px; background-position: -1118px -41px}
+  .shields-b .s6-05 {width:44px; height:37px; background-position: -1118px -2px}
+  .shields-b .s6-06 {width:45px; height:37px; background-position: -1055px -156px}
+  .shields-b .s9-01 {width:30px; height:37px; background-position: -1115px -119px}
+  .shields-b .s9-02 {width:29px; height:37px; background-position: -449px -194px}
+  .shields-b .s9-03 {width:29px; height:37px; background-position: -418px -194px}
+  .shields-b .s9-04 {width:29px; height:37px; background-position: -387px -195px}
+  .shields-b .s9-05 {width:29px; height:37px; background-position: -1131px -197px}
+  .shields-b .s9-06 {width:29px; height:37px; background-position: -1133px -158px}
+  .shields-b .s9-07 {width:29px; height:37px; background-position: -1100px -197px}
+  .shields-b .s9-08 {width:29px; height:37px; background-position: -1102px -158px}
+  .shields-b .s9-09 {width:30px; height:37px; background-position: -355px -195px}
+
+  .bear, .bear > * {display:block; background-repeat: no-repeat;background-image:url('/images/mobile/bear.png');}
+
+  .angry-1 {width:104px; height:95px; background-position: -320px -99px}
+  .angry-2 {width:104px; height:95px; background-position: -214px -99px}
+  .angry-3 {width:104px; height:95px; background-position: -108px -150px}
+  .angry-4 {width:104px; height:95px; background-position: -610px -2px}
+  .angry-5 {width:104px; height:95px; background-position: -504px -2px}
+  .angry-6 {width:104px; height:95px; background-position: -398px -2px}
+  .angry-7 {width:104px; height:95px; background-position: -292px -2px}
+  .angry-8 {width:104px; height:95px; background-position: -186px -2px}
+  .angry-9 {width:104px; height:95px; background-position: -2px -150px}
+  .bear.full {width:182px; height:146px; background-position: -2px -2px}
+  .blink-1 {width:56px; height:18px; background-position: -634px -222px}
+  .blink-2 {width:56px; height:18px; background-position: -634px -202px}
+  .bob {width:44px; height:39px; background-position: -426px -151px}
+  .flirt-1 {width:67px; height:49px; background-position: -610px -151px}
+  .flirt-2 {width:67px; height:49px; background-position: -565px -202px}
+  .flirt-3 {width:67px; height:49px; background-position: -541px -151px}
+  .flirt-4 {width:67px; height:49px; background-position: -496px -202px}
+  .flirt-5 {width:67px; height:49px; background-position: -427px -202px}
+  .flirt-6 {width:67px; height:49px; background-position: -472px -151px}
+  .flirt-7 {width:67px; height:49px; background-position: -358px -196px}
+  .jawdrop-1 {width:70px; height:50px; background-position: -286px -196px}
+  .jawdrop-2 {width:70px; height:50px; background-position: -214px -196px}
+  .jawdrop-3 {width:70px; height:50px; background-position: -642px -99px}
+  .jawdrop-4 {width:70px; height:50px; background-position: -570px -99px}
+  .jawdrop-5 {width:70px; height:50px; background-position: -498px -99px}
+  .jawdrop-6 {width:70px; height:50px; background-position: -426px -99px}
+
+  .extra,
+  .extra .icon {width:63px; height:63px; display:block; background-repeat: no-repeat;}
+  .extra .icon {background-image:url('/images/mobile/extra-icons.png');}
+  .deathball .icon {width:63px; height:63px; background-position: -717px -2px}
+  .fog .icon {width:63px; height:63px; background-position: -587px -2px}
+  .ghostball .icon {width:63px; height:63px; background-position: -522px -2px}
+  .laser .icon {width:63px; height:63px; background-position: -457px -2px}
+  .extralife .icon {width:63px; height:63px; background-position: -392px -2px}
+  .mirroredcontrols .icon {width:63px; height:63px; background-position: -327px -2px}
+  .multiball .icon {width:63px; height:63px; background-position: -262px -2px}
+  .paddleresize .icon {width:63px; height:63px; background-position: -197px -2px}
+  .random .icon {width:63px; height:63px; background-position: -67px -2px}
+  .bulletproof .icon {width:63px; height:63px; background-position: -67px -2px}
+  .timebomb .icon {width:63px; height:63px; background-position: -2px -2px}
+  .fireball .icon {width:63px; height:63px; background-position: -652px -2px}
+
+
+  .effect {display:block; background-repeat: no-repeat;background-image:url('/images/mobile/effects.png');}
+  .effect.fog {width:576px; height:355px; background-position: -2px -2px}
+
+  .explosion.p1 {width:558px; height:255px; background-position: -2px -359px}
+  .explosion.p2 {width:470px; height:203px; background-position: -562px -359px}
+
+  .force {width:252px; height:252px;}
+
+  .force-1 {width:252px; height:252px; background-position: -2px -616px}
+  .force-2 {width:252px; height:252px; background-position: -256px -616px}
+  .force-3 {width:252px; height:252px; background-position: -510px -616px}
+
+  .hit-cpu {width:266px; height:146px; background-position: -764px -616px}
+  .hit-player {width:266px; height:146px; background-position: -2px -870px}
+
+  .obstacle {display:block; background-repeat: no-repeat;background-image:url('/images/mobile/obstacles.png');}
+  .diamond {width:159px; height:126px; background-position: -172px -2px}
+  .octagon {width:164px; height:124px; background-position: -333px -2px}
+  .triangle-left {width:83px; height:151px; background-position: -87px -2px}
+  .triangle-right {width:83px; height:151px; background-position: -2px -2px}
+
+
+

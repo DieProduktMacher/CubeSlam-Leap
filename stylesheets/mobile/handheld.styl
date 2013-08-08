@@ -1,0 +1,444 @@
+$footer-height = 47px
+
+#canv-css
+  display none
+html.mobile
+  width 100%
+  background $color-beige
+  .touch
+    #debug-info
+      display none!important
+
+  .mobile
+    display block
+
+  body
+    width 100%
+    height 100%
+    position absolute
+    // box-sizing border-box
+    background $color-beige
+
+    button
+      border-radius 0
+
+    &.mirror
+      #gamepad
+        transform scaleX(-1)
+
+
+    &.game-pause
+      #gamepad
+        opacity .7
+      button.pause
+        transition-delay 0ms
+        transform translateX(100%)
+
+  .play-friend
+  , .play-computer
+  , button.main-menu
+  , .multiplayer
+  , section.state.game-pause
+  , #extras
+  , #notifications
+  , #settingsGUIContainer
+  , #debug-info
+  , #canv-3d
+  , #canv-2d
+  , #canv-db
+    display none!important
+
+  // #settingsGUIContainer
+
+  .dialog
+    bottom 0
+
+  header
+    background no-repeat center center
+    background-size cover
+    transition-duration 1ms
+
+    h1
+      padding 0 0 0 0
+      margin 0
+
+    h2
+      display none
+
+    &.delay
+      transition-delay 0s
+
+    h1
+      position relative
+      top 5%
+      padding 0
+
+    .links
+      .from
+        font-size 47px
+        right 15px
+        bottom 69px
+      .experiment
+        font-size 42px
+        bottom 66px
+        left 15px
+
+    .nav
+     
+      width 100%
+      padding 0
+
+      a.button
+        display none!important
+
+      button
+        width auto
+        min-width 0
+        padding-left 15px
+        padding-right 15px
+
+    .play-mobile
+      display inline-block
+
+    .notifications
+      display none
+
+
+  #mobile-menu, .cssinfo .buttons
+    position absolute
+    top 45px
+    right 0
+    z-index 2
+    button
+      width 48px
+      height 48px
+      min-width 0
+      margin 0
+      padding 0
+      border none
+      display block
+
+      &.play
+        background $color-blue
+        color $color-beige
+      &.pause
+        background $color-beige
+        color $color-blue
+        position absolute
+        right 0
+        z-index 1
+        transition transform 250ms
+        transition-delay .7s
+      &.sound
+        background $color-green
+        color #306e2b
+        &.off
+          &:before
+            content '♩'
+      &.info
+        background $color-yellow
+        color #b58d33
+      &.return
+        background #ffd059
+        color #b58d33
+
+
+
+    .game-pause, .game-play
+      transform translateX(0)
+      position relative
+      z-index 2
+      transition transform 300ms ease-out
+      transition-delay 300ms
+      display block!important
+
+      &.inactive
+        transform translateX(100%)
+        transition-delay 0ms
+
+  .state.game-prompt
+    transform translate3d(0,0,1)
+    backface-visibility hidden
+    .background
+      transition none
+      height 100px
+      margin-top -50px
+      top 50%
+      backface-visibility hidden
+
+    // .content
+    //   transition-duration 0!important
+    //   transition-delay .1ms!important
+
+    .prompt
+      transform translateZ(0)
+      backface-visibility hidden
+
+
+
+  footer#footer
+    display none
+    height $footer-height
+    pointer-events none
+    a
+      pointer-events auto
+      width 22px
+      height 22px
+
+    ul
+      padding 11px 13px 0 0
+      margin-top 0
+
+      li
+        margin-left 13px
+        margin-right 0
+
+        &:first-child
+          margin-left 0
+          margin-right 0
+
+    .terms, .localization
+      display none
+
+    .technology, .sound
+      a
+        font-family 'icomoon'
+        font-size 12px
+        border-radius 3px
+        display table-cell
+        vertical-align middle
+        border 1px solid transparent
+
+        &:before
+          display inline-block
+          text-align center
+          width 100%
+          vertical-align middle
+
+      span
+        display none!important
+
+
+    .technology
+      a
+        background $color-yellow
+        &:before
+          content '⌽'
+          color #b58d33
+    .sound
+      a
+        background $color-green
+        &:before
+          content '♫'
+          color #306e2b
+        &.off
+          &:before
+            content '♩'
+
+  body.main-menu
+    #footer
+      display block
+
+  #scores
+    position absolute
+    top 10px
+    left 0
+    width 100%
+    margin 0
+    z-index 1
+    pointer-events none
+    box-sizing border-box
+
+    .logo
+      position absolute
+      right 14px
+      .level
+        margin-top 6px
+      p
+        float none
+      h1, img
+        display none
+
+    .logo, .multiplayer, .singleplayer
+      display inline-block
+      vertical-align top
+    .multiplayer, .singleplayer
+      .player, .opponent
+        display inline-block
+        margin 0
+        margin-left 20px
+        p
+          font-size 10px
+          width 36px
+          margin 0 0 2px
+        li
+          width 12px
+          height 12px
+          &:before
+            box-shadow none
+
+  #gamepad
+    display none!important
+    position absolute
+    bottom 50%
+    width 100%
+    z-index 2
+    transition opacity 300ms ease-out
+
+    button
+      background-color #6bba6b
+      width 72px
+      height 72px
+      border-radius 36px
+      box-shadow 0 3px 5px rgba(0,0,0,.3)
+      position absolute
+      left 5%
+      padding 0
+      outline 0
+      border 0
+
+      &.left:before
+        left 20px
+      &.right:before
+        left 26px
+
+      &:after
+        content ' '
+        position absolute
+        bottom 1px
+        left 4.2%
+        width 93%
+        height 93%
+        border-radius 93%
+        background-color #4daf4d
+
+      &:before
+        font-size 36px
+        color #295d21
+        position absolute
+        top 27%
+        z-index 2
+
+
+      &:active, &.down
+        box-shadow 0 1px 3px rgba(0,0,0,.1)
+        top 2px
+        &:after
+          bottom inherit
+          top 1px
+
+      &:last-child
+        left auto
+        right 5%
+
+  .state
+    visibility hidden
+    &.active
+      visibility visible
+
+    .dialog
+      background $color-beige
+      transform-style preserve-3d
+      backface-visibility hidden
+      transform translateZ(0)
+      .content.animate
+        transition none
+        // transition-duration 0ms
+
+    &.game-instructions
+      p
+        width auto
+        margin-left auto
+      .game-controls
+        display none!important
+      .destroy-shield
+        height 200px
+      .destroy-shield__label
+        position absolute
+        margin-top -20px
+        left 0
+        width 100%
+        p
+          width 100%
+          white-space normal
+          line-height 1.2
+          padding 0 10px
+          box-sizing border-box
+      .dialog
+        bottom $footer-height
+        top 0
+        height 100%
+      .content
+        transition none
+      &.inactive
+        display none!important
+      &.active
+        display block!important
+    &.game-over
+      .dialog
+        h1
+          font-size 30px
+          margin-top 0
+          text-align center
+
+        height 100%
+        min-height 0
+        top 0
+        .content
+          padding-bottom 0
+        .scoreboard
+          padding 0 0 15px
+        .social
+          display none
+          li
+            margin-right 5px
+          a
+            padding 5px
+        button
+          width auto
+          padding 10px 20px
+          margin-left 0
+      &.inactive
+        display none!important
+
+  .mobile
+    .main-menu
+      width 100%
+      height 100%
+      position absolute
+    .cssinfo
+      position absolute
+      z-index 6
+
+
+    h4.game-over
+      position absolute
+      z-index 5
+      width 100%
+      top 0
+      font-size 30px
+      color #ffd05a
+      text-shadow 0 0.1em 0 #876b2a
+      pointer-events none
+
+
+  .state.game-instructions
+    #game-controls
+      display none
+
+  .game-instructions
+    #game
+      visibility hidden!important
+
+  #game
+    opacity 1
+    height 0
+    width 0
+    left 50%
+    top 50%
+    overflow visible
+    > canvas, > video
+      display none
+
+@import 'mobilebreakpoints'
+@import 'mobilethemes'
